@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <target>System.out</target>
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+      <includeContext>false</includeContext>
+      <includeCallerData>false</includeCallerData>
+      <fieldNames>
+        <timestamp>timestamp</timestamp>
+        <message>[ignore]</message>
+        <thread>[ignore]</thread>
+        <logger>[ignore]</logger>
+        <version>[ignore]</version>
+        <levelValue>[ignore]</levelValue>
+      </fieldNames>
+    </encoder>
+  </appender>
+</configuration>
